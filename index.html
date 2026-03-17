@@ -8,12 +8,14 @@
 <style>
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
+  background: #FFF7FB; /* fondo pastel */
 }
 
 /* NAV */
 nav {
-  background: #F8C8DC; /* rosa pastel */
+  background: linear-gradient(90deg, #FADADD, #E0BBE4, #D0F4DE);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 nav ul {
@@ -21,6 +23,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -31,31 +34,38 @@ nav ul li {
 
 nav ul li a {
   display: block;
-  padding: 15px 20px;
-  color: #5D3A66; /* morado suave */
+  padding: 15px 25px;
+  color: #5A4E6D;
   text-decoration: none;
   font-weight: bold;
+  transition: 0.3s;
+  border-radius: 10px;
 }
 
 nav ul li a:hover {
-  background: #EEC9F1; /* lila pastel */
+  background: #FFE5EC;
+  transform: scale(1.05);
 }
 
 /* SUBMENÚ */
 nav ul li ul {
   display: none;
   position: absolute;
-  background: #DFF5E1; /* verde pastel */
-  min-width: 150px;
+  background: #FFFFFF;
+  min-width: 160px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
 }
 
 nav ul li ul li a {
-  color: #4A4A4A;
-  padding: 10px;
+  color: #6B6B6B;
+  padding: 12px;
+  display: block;
 }
 
 nav ul li ul li a:hover {
-  background: #B5EAD7; /* verde menta */
+  background: #C7F9CC;
 }
 
 /* MOSTRAR SUBMENÚ */
@@ -67,10 +77,16 @@ nav ul li:hover ul {
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
+    align-items: center;
   }
 
   nav ul li {
     width: 100%;
+    text-align: center;
+  }
+
+  nav ul li ul {
+    position: static;
   }
 }
 </style>
