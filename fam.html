@@ -3,35 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Familia y escuela</title>
 
 <style>
-body {
-    font-family: 'Georgia', serif;
-    background-color: #fff3ec;
-    padding: 40px;
-    line-height: 1.8;
-    color:#2c2c2c;
+body{
+    font-family: Georgia;
+    background:#fff3ec;
+    padding:40px;
+    line-height:1.9;
 }
-
-h1 {text-align:center;color:#c46d4a;}
-h2 {color:#e08760;}
-
-.seccion {
+h1{
+    text-align:center;
+    color:#c46d4a;
+    margin-bottom:40px;
+}
+.container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap:25px;
+}
+.bloque{
     background:white;
-    border-left:6px solid #f0a07a;
-    padding:20px;
-    margin-bottom:25px;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
 }
-
-p, li {text-align:justify;}
-
-.img-full {
+h2{color:#e08760;}
+p,li{text-align:justify;}
+.img-full{
     width:100%;
-    max-width:1550px;
-    height:auto;
+    max-width:1200px;
     display:block;
-    margin:auto;
+    margin:40px auto;
 }
 </style>
 </head>
@@ -40,42 +42,55 @@ p, li {text-align:justify;}
 
 <h1>EL PAPEL DE LA FAMILIA Y LA ESCUELA</h1>
 
-<div class="seccion">
-<h2>Apoyo familiar</h2>
-<p>La familia es uno de los factores más importantes en la permanencia escolar, ya que influye directamente en la motivación, la seguridad y el desempeño del estudiante.</p>
+<div class="container">
+
+<div class="bloque">
+<h2>Importancia de la familia</h2>
+<p>La familia es el primer espacio de formación del estudiante y juega un papel fundamental en su desarrollo académico y emocional. Un entorno familiar positivo permite que el estudiante se sienta seguro, motivado y apoyado para continuar sus estudios.</p>
 
 <ul>
-<li><strong>Motivación constante:</strong> cuando los padres o tutores apoyan y animan al estudiante, este se siente más comprometido con sus estudios y tiene mayor interés en continuar.</li>
-<li><strong>Ambiente positivo:</strong> un hogar estable y sin conflictos favorece la concentración y el aprendizaje.</li>
-<li><strong>Confianza y comunicación:</strong> permite que el estudiante exprese sus problemas y reciba orientación adecuada.</li>
+<li>El apoyo emocional ayuda a fortalecer la confianza y la autoestima del estudiante.</li>
+<li>La motivación constante fomenta el interés por aprender y superarse.</li>
+<li>Un ambiente estable facilita la concentración y el rendimiento académico.</li>
 </ul>
 </div>
 
-<div class="seccion">
+<div class="bloque">
 <h2>Relación familia-escuela</h2>
-<p>La comunicación entre la familia y la escuela es clave para detectar problemas a tiempo y apoyar al estudiante de manera adecuada.</p>
+<p>La comunicación entre la familia y la escuela es esencial para detectar problemas a tiempo y brindar soluciones adecuadas.</p>
 
 <ul>
-<li><strong>Seguimiento académico:</strong> los padres pueden conocer el desempeño del estudiante y ayudar a mejorar áreas débiles.</li>
-<li><strong>Reuniones escolares:</strong> fortalecen la relación entre docentes y familia, facilitando el apoyo conjunto.</li>
-<li><strong>Trabajo en equipo:</strong> cuando familia y escuela colaboran, el estudiante recibe apoyo integral.</li>
+<li>El seguimiento académico permite conocer el desempeño del estudiante.</li>
+<li>Las reuniones escolares fortalecen la colaboración.</li>
+<li>El trabajo en equipo mejora el apoyo integral al estudiante.</li>
 </ul>
 </div>
 
-<div class="seccion">
-<h2>Importancia del entorno educativo</h2>
-<p>La escuela también juega un papel fundamental al ofrecer un ambiente adecuado para el aprendizaje.</p>
+<div class="bloque">
+<h2>Importancia de la escuela</h2>
+<p>La escuela es el espacio donde el estudiante desarrolla conocimientos y habilidades sociales.</p>
 
 <ul>
-<li><strong>Docentes comprometidos:</strong> motivan a los estudiantes y facilitan la comprensión de los temas.</li>
-<li><strong>Ambiente inclusivo:</strong> permite que todos los estudiantes se sientan aceptados y valorados.</li>
-<li><strong>Actividades dinámicas:</strong> hacen que el aprendizaje sea más interesante y atractivo.</li>
+<li>Docentes comprometidos motivan a los estudiantes.</li>
+<li>Ambiente inclusivo favorece la participación.</li>
+<li>Actividades dinámicas hacen el aprendizaje más interesante.</li>
 </ul>
 </div>
 
-<center>
+<div class="bloque">
+<h2>Trabajo en conjunto</h2>
+<p>Cuando la familia y la escuela trabajan juntas, se logra un mejor desarrollo académico y personal del estudiante.</p>
+
+<ul>
+<li>Se detectan problemas a tiempo.</li>
+<li>Se brinda apoyo emocional y académico.</li>
+<li>Se fortalece la permanencia escolar.</li>
+</ul>
+</div>
+
+</div>
+
 <img src="https://cdn.pixabay.com/photo/2016/11/21/16/01/family-1846119_1280.jpg" class="img-full">
-</center>
 
 </body>
 </html>
