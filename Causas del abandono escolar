@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Causas del abandono escolar</title>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9fafc;
+            margin: 40px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 {
+            color: #0a4d8c;
+            text-align: center;
+        }
+        h2 {
+            color: #145a9e;
+            border-bottom: 2px solid #145a9e;
+            padding-bottom: 5px;
+        }
+        ul {
+            margin-left: 40px;
+        }
+        p {
+            text-align: justify;
+        }
+        .seccion {
+            background-color: #eef5fb;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+         
+    /* --- VIDEO RESPONSIVO --- */
+    .video-container {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      margin: auto;
+      padding-bottom: 56.25%; /* Proporción 16:9 */
+      height: 0;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    </style>
+</head>
+<body>
+
+    <h1>UN CIUDADANO ACTIVO PUEDE TRANSFORMAR SU ENTORNO CON PEQUEÑAS ACCIONES</h1>
+
+    <div class="seccion">
+        <p>Un <strong>ciudadano</strong> es toda persona que pertenece legalmente a un país y tiene <strong>derechos y deberes</strong> dentro de él. La ciudadanía le da la posibilidad de participar en la vida política, social, económica y cultural de su nación. Ser ciudadano no solo se trata de tener una nacionalidad, sino también de <strong>ser parte activa de la sociedad</strong> y contribuir a su desarrollo.</p>
+    </div>
+
+    <div class="seccion">
+        <h2>Derechos del Ciudadano</h2>
+        <ul>
+            <li>Derecho a la vida y a la seguridad.</li>
+            <li>Derecho a la educación, salud y trabajo.</li>
+            <li>Derecho a la libertad de expresión y opinión.</li>
+            <li>Derecho a participar en elecciones y votar libremente.</li>
+            <li>Derecho a recibir un trato justo ante la ley.</li>
+            <li>Derecho a la igualdad sin discriminación.</li>
+            <li>Derecho a vivir en un medio ambiente sano.</li>
+            <li>Derecho a la protección de su identidad y cultura.</li>
+        </ul>
+        <p>Los derechos ciudadanos buscan asegurar que todas las personas puedan <strong>vivir dignamente y participar en la sociedad</strong> sin ser excluidas o maltratadas.</p>
+    </div>
+
+    <div class="seccion">
+        <h2>Deberes del Ciudadano</h2>
+        <ul>
+            <li>Cumplir y respetar las leyes del país.</li>
+            <li>Participar en la vida democrática, por ejemplo, votando.</li>
+            <li>Cuidar el medio ambiente y los bienes públicos.</li>
+            <li>Contribuir con el pago de impuestos.</li>
+            <li>Respetar los derechos de los demás.</li>
+            <li>Defender la patria y promover la paz.</li>
+            <li>Practicar valores como la solidaridad, la tolerancia y el respeto.</li>
+        </ul>
+    </div>
+
+    <div class="seccion">
+        <h2>Tipos de Ciudadanía</h2>
+        <ul>
+            <li><strong>Ciudadanía política:</strong> permite participar en elecciones y ocupar cargos públicos.</li>
+            <li><strong>Ciudadanía civil:</strong> garantiza derechos como la libertad y la igualdad ante la ley.</li>
+            <li><strong>Ciudadanía social:</strong> asegura el acceso a la educación, salud y bienestar.</li>
+            <li><strong>Ciudadanía digital:</strong> se relaciona con el uso responsable de las redes y la tecnología.</li>
+        </ul>
+    </div>
+
+    <div class="seccion">
+        <h2>Importancia del Ciudadano en la Sociedad</h2>
+        <p>El ciudadano es el <strong>pilar de toda democracia</strong>, porque con su participación se toman decisiones que afectan a todos. Un ciudadano activo ayuda a mejorar su comunidad, impulsa cambios positivos y promueve la justicia social. Además, cuando los ciudadanos están bien informados y comprometidos, los gobiernos son más transparentes y responsables.</p>
+    </div>
+
+    <div class="seccion">
+        <h2>Valores de un buen Ciudadano</h2>
+        <ul>
+            <li>Respeto</li>
+            <li>Honestidad</li>
+            <li>Responsabilidad</li>
+            <li>Empatía</li>
+            <li>Solidaridad</li>
+            <li>Justicia</li>
+            <li>Tolerancia</li>
+        </ul>
+    </div>
+    <center>
+             <!-- Video responsivo -->
+    <div class="video-container">
+      <iframe 
+        src="https://drive.google.com/file/d/1VvaZV8INkNzp2k-WEIr6PPUKiDaWnDb1/preview"
+        allow="autoplay; encrypted-media"
+        title="Video desde Google Drive">
+      </iframe>
+    </div>
+</body>
+</html>
