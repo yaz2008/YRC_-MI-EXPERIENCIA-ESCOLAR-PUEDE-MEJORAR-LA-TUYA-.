@@ -3,79 +3,94 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Consecuencias</title>
 
 <style>
-body {
+body{
     font-family: 'Georgia', serif;
-    background-color: #eefaf3;
-    padding: 40px;
-    line-height: 1.8;
-    color:#2c2c2c;
+    background:#eefaf3;
+    padding:30px;
 }
-
-h1 {text-align:center;color:#2f7f5f;}
-h2 {color:#3e8e6d;}
-
-.seccion {
+h1{
+    text-align:center;
+    color:#2f7f5f;
+    margin-bottom:30px;
+}
+.grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap:20px;
+}
+.card{
     background:white;
-    border-left:6px solid #6cc4a1;
     padding:20px;
-    margin-bottom:25px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
-
-p, li {text-align:justify;}
-
-.img-full {
+.card h2{
+    color:#3e8e6d;
+}
+p,li{
+    text-align:justify;
+    line-height:1.8;
+}
+.img-full{
     width:100%;
-    max-width:1550px;
-    height:auto;
+    max-width:1200px;
     display:block;
-    margin:auto;
+    margin:40px auto;
 }
 </style>
 </head>
 
 <body>
 
-<h1>CONSECUENCIAS DE NO TERMINAR LOS ESTUDIOS</h1>
+<h1>CONSECUENCIAS DEL ABANDONO ESCOLAR</h1>
 
-<div class="seccion">
-<h2>Impacto laboral</h2>
-<p>El abandono escolar tiene un impacto directo en las oportunidades laborales de una persona. En la actualidad, la mayoría de los empleos requieren un nivel educativo mínimo, por lo que no concluir los estudios limita el acceso a trabajos formales y bien remunerados.</p>
+<div class="grid">
 
+<div class="card">
+<h2>Consecuencias laborales</h2>
+<p>El abandono escolar reduce significativamente las oportunidades laborales, ya que la mayoría de los empleos requieren preparación académica.</p>
 <ul>
-<li><strong>Menor acceso a empleos formales:</strong> las empresas suelen exigir certificados o títulos, por lo que quienes no los tienen enfrentan mayores dificultades para ser contratados.</li>
-<li><strong>Salarios bajos:</strong> los trabajos disponibles para personas sin estudios suelen ser mal pagados, lo que dificulta alcanzar estabilidad económica.</li>
-<li><strong>Pocas oportunidades de crecimiento:</strong> sin preparación académica es más complicado ascender o mejorar dentro de un empleo.</li>
+<li>Las personas sin estudios enfrentan mayor dificultad para ser contratadas.</li>
+<li>Los empleos disponibles suelen ser informales y con bajos salarios.</li>
+<li>Las oportunidades de crecimiento profesional son limitadas.</li>
 </ul>
 </div>
 
-<div class="seccion">
-<h2>Impacto económico</h2>
-<p>La falta de estudios no solo afecta el empleo, sino también la estabilidad económica. Los ingresos suelen ser bajos e irregulares, lo que complica cubrir necesidades básicas.</p>
-
+<div class="card">
+<h2>Consecuencias económicas</h2>
+<p>La falta de educación impacta la estabilidad económica a largo plazo.</p>
 <ul>
-<li><strong>Ingresos inestables:</strong> los trabajos informales no garantizan un sueldo fijo, lo que genera incertidumbre económica.</li>
-<li><strong>Dificultad para cubrir gastos:</strong> pagar transporte, alimentación o vivienda se vuelve más complicado.</li>
-<li><strong>Poca capacidad de ahorro:</strong> al no tener ingresos constantes, es difícil planear a futuro.</li>
+<li>Los ingresos suelen ser inestables y bajos.</li>
+<li>Se dificulta cubrir necesidades básicas.</li>
+<li>Es complicado planear un futuro económico estable.</li>
 </ul>
 </div>
 
-<div class="seccion">
-<h2>Impacto personal</h2>
-<p>El abandono escolar también afecta el desarrollo personal y emocional del estudiante, generando sentimientos negativos.</p>
-
+<div class="card">
+<h2>Consecuencias personales</h2>
+<p>El abandono escolar afecta el desarrollo emocional del estudiante.</p>
 <ul>
-<li><strong>Baja autoestima:</strong> el estudiante puede sentirse incapaz de lograr metas.</li>
-<li><strong>Desmotivación:</strong> pierde interés en superarse académicamente.</li>
-<li><strong>Limitación de metas:</strong> reduce sus aspiraciones personales y profesionales.</li>
+<li>Puede generar baja autoestima y frustración.</li>
+<li>Se reducen las metas personales.</li>
+<li>Disminuye la motivación para superarse.</li>
 </ul>
 </div>
 
-<center>
+<div class="card">
+<h2>Impacto social</h2>
+<p>Este problema también afecta a la sociedad en general.</p>
+<ul>
+<li>Aumenta la desigualdad social.</li>
+<li>Reduce el nivel educativo de la población.</li>
+<li>Limita el desarrollo económico del país.</li>
+</ul>
+</div>
+
+</div>
+
 <img src="https://cdn.pixabay.com/photo/2017/02/01/22/02/work-2038873_1280.jpg" class="img-full">
-</center>
 
 </body>
 </html>
