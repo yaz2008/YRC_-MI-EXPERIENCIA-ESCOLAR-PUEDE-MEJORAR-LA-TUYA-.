@@ -1,148 +1,181 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MI EXPERIENCIA ESCOLAR PUEDE MEJORAR LA TUYA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MI EXPERIENCIA ESCOLAR PUEDE MEJORAR LA TUYA</title>
+  <script src="alert.js"></script>
 
-<style>
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #F3FFF6; /* fondo verde pastel muy suave */
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
 
-/* NAV */
-nav {
-  background: #B5EAD7; /* verde pastel */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
+    /* Ajustes generales para móviles */
+    @media (max-width: 600px) {
+      body, main {
+        padding: 10px;
+      }
+      h1, h2 {
+        font-size: 1.2em;
+        text-align: center;
+      }
+      iframe {
+        width: 100%;
+        height: 200px;
+      }
+      nav ul {
+        flex-direction: column;
+      }
+      nav ul li {
+        width: 100%;
+      }
+      nav ul li a {
+        text-align: center;
+      }
+      img[align="left"] {
+        display: block;
+        margin: auto;
+      }
+    }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+    nav {
+      background: #A8E6CF; /* verde pastel */
+      width: 100%;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    nav ul li {
+      position: relative;
+    }
+    nav ul li a {
+      display: block;
+      padding: 15px 20px;
+      color: #2E4053;
+      text-decoration: none;
+    }
+    nav ul li a:hover {
+      background: #81C784;
+    }
 
-/* MENÚ PRINCIPAL */
-nav ul li {
-  position: relative;
-}
+    /* Submenús */
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #E8F8F5;
+      padding: 0;
+      min-width: 180px;
+      z-index: 999;
+    }
+    nav ul li ul li a {
+      padding: 10px 15px;
+      color: black;
+    }
+    nav ul li ul li a:hover {
+      background: #A5D6A7;
+    }
+    nav ul li:hover > ul {
+      display: block;
+    }
 
-nav ul li a {
-  display: block;
-  padding: 15px 25px;
-  color: #355F5C;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 10px;
-  transition: 0.3s;
-}
+    .img-full {
+      width: 100%;
+      max-width: 1550px;
+      height: auto;
+      display: block;
+      margin: auto;
+    }
 
-/* HOVER LILA */
-nav ul li a:hover {
-  background: #E0BBE4; /* lila pastel */
-  color: #4B3F72;
-  transform: scale(1.05);
-}
-
-/* SUBMENÚ */
-nav ul li ul {
-  display: none;
-  position: absolute;
-  background: #DFF5E1; /* verde claro */
-  min-width: 160px;
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-  overflow: hidden;
-}
-
-nav ul li ul li a {
-  padding: 12px;
-  color: #355F5C;
-}
-
-/* HOVER SUBMENÚ */
-nav ul li ul li a:hover {
-  background: #E0BBE4; /* lila */
-}
-
-/* MOSTRAR SUBMENÚ */
-nav ul li:hover ul {
-  display: block;
-}
-
-/* RESPONSIVO */
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul li {
-    width: 100%;
-    text-align: center;
-  }
-
-  nav ul li ul {
-    position: static;
-  }
-}
-</style>
+    center a {
+      font-size: 1.2em;
+      word-wrap: break-word;
+    }
+  </style>
 </head>
 
 <body>
-
-<nav>
-<ul>
-
-  <li>
-    <a href="#">MENÚ 1</a>
+  <nav>
     <ul>
-      <li><a href="#">Submenú 1</a></li>
+      <img src="LOGOCECY.png" width="90" height="80" style="margin-right:10px;">
+
+      <!-- 1 -->
+      <li>
+        <p><a href="#">¿POR QUÉ OCURRE EL ABANDONO ESCOLAR?</a></p>
+        <ul>
+          <li><a href="#">.</a></li>
+          <li><a href="#">.</a></li>
+        </ul>
+      </li>
+
+      <!-- 2 -->
+      <li>
+        <p><a href="#">EXPERIENCIA</a></p>
+        <ul>
+          <li><a href="#">Mi historia</a></li>
+          <li><a href="#">Aprendizaje</a></li>
+        </ul>
+      </li>
+
+      <!-- 3 -->
+      <li>
+        <p><a href="#">CONSEJOS</a></p>
+        <ul>
+          <li><a href="#">Académicos</a></li>
+          <li><a href="#">Personales</a></li>
+        </ul>
+      </li>
+
+      <!-- 4 -->
+      <li>
+        <p><a href="#">RECURSOS</a></p>
+        <ul>
+          <li><a href="#">Material</a></li>
+          <li><a href="#">Herramientas</a></li>
+        </ul>
+      </li>
+
+      <!-- 5 -->
+      <li>
+        <p><a href="#">ACTIVIDADES</a></p>
+        <ul>
+          <li><a href="#">Tareas</a></li>
+          <li><a href="#">Proyectos</a></li>
+        </ul>
+      </li>
+
+      <!-- 6 -->
+      <li>
+        <p><a href="#">CONTACTO</a></p>
+        <ul>
+          <li><a href="#">Dudas</a></li>
+          <li><a href="#">Sugerencias</a></li>
+        </ul>
+      </li>
+
+      <a href="index_dudas.html">
+        <img src="signo.png" align="left" width="80" height="70">
+      </a>
+
     </ul>
-  </li>
+  </nav> 
 
-  <li>
-    <a href="#">MENÚ 2</a>
-    <ul>
-      <li><a href="#">Submenú 2</a></li>
-    </ul>
-  </li>
+  <center>
+    <h1><a href="https://share.google/Q5YCviwYntzpR3B4T">PORTAL AYUNTAMIENTO VALLE DE BRAVO 2025</a></h1>
 
-  <li>
-    <a href="#">MENÚ 3</a>
-    <ul>
-      <li><a href="#">Submenú 3</a></li>
-    </ul>
-  </li>
+    <a href="https://drive.google.com/uc?export=download&id=1xApFMtD8a-QzIFmVxxqwvs0rOD1oLndq" download>TRAMITE</a>
 
-  <li>
-    <a href="#">MENÚ 4</a>
-    <ul>
-      <li><a href="#">Submenú 4</a></li>
-    </ul>
-  </li>
+    <h1><a href="viv.html">GUIA DIGITAL</a></h1>
 
-  <li>
-    <a href="#">MENÚ 5</a>
-    <ul>
-      <li><a href="#">Submenú 5</a></li>
-    </ul>
-  </li>
-
-  <li>
-    <a href="#">MENÚ 6</a>
-    <ul>
-      <li><a href="#">Submenú 6</a></li>
-    </ul>
-  </li>
-
-</ul>
-</nav>
-
+    <img src="tar.png" class="img-full">
+  </center>
 </body>
 </html>
