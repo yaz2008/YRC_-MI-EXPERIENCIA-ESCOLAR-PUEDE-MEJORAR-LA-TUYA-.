@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+    font-family: Georgia;
+    padding:20px;
+    max-width: 900px;
+    margin: auto;
+    background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+    background-attachment: fixed;
+}
+
+h1{
+    text-align:center;
+    color:white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.botones{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+button{
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
+    color:#333;
+    border:none;
+    padding:10px 18px;
+    margin:5px;
+    border-radius:20px;
+    cursor:pointer;
+    font-size:15px;
+    transition:0.3s;
+}
+
+button:hover{
+    background: rgba(255,255,255,0.6);
+    transform:scale(1.05);
+}
+
+.seccion{
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(12px);
+    padding:25px;
+    margin-bottom:25px;
+    border-left:8px solid #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    color:#222;
+}
+
+h2{ color:#4b3f72; }
+
+p,li{
+    text-align:justify;
+    line-height:1.9;
+}
+
+.nota {
+    margin-top: 15px;
+    font-style: italic;
+    color: #222;
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
+    padding: 12px;
+    border-left: 5px solid white;
+    border-radius: 10px;
+}
+
+.img-full {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+.oculto{ display:none; }
+
+@media (max-width: 600px){
+    body{ padding:10px; }
+    .seccion{ padding:15px; }
+}
+</style>
+</head>
+
+<body>
+
+<h1>UNA EXPERIENCIA ESCOLAR QUE CAMBIÓ MI FORMA DE ESTUDIAR</h1>
+
+<img src="4.jpeg" class="img-full">
+
+<div class="botones">
+    <button onclick="mostrarTodo()">Mostrar todo</button>
+    <button onclick="ocultarTodo()">Ocultar todo</button>
+</div>
+
+<div class="seccion">
+<h2>El momento difícil</h2>
+<button onclick="toggle(this)">Mostrar / Ocultar</button>
+<div class="contenido">
+<p>Hubo un momento en mi vida escolar donde todo empezó a salir mal. Me sentía cansado, sin ganas y con la sensación de que no importaba cuánto intentara, no iba a mejorar. Empecé a dejar tareas, a distraerme y poco a poco perdí el control.</p>
+<ul>
+<li>Falta de organización y acumulación de trabajos.</li>
+<li>Ansiedad por no cumplir con las expectativas.</li>
+<li>Pensamientos negativos como “no puedo” o “ya para qué”.</li>
+</ul>
+</div>
+</div>
+
+<div class="seccion">
+<h2>Consecuencias reales</h2>
+<button onclick="toggle(this)">Mostrar / Ocultar</button>
+<div class="contenido">
+<p>No cambiar a tiempo tuvo consecuencias. Mis calificaciones bajaron, mi confianza también y empecé a alejarme de mis metas. Me di cuenta de que el problema no era la escuela, sino cómo estaba enfrentando las cosas.</p>
+<ul>
+<li>Bajo rendimiento académico.</li>
+<li>Estrés constante.</li>
+<li>Pérdida de motivación.</li>
+</ul>
+</div>
+</div>
+
+<div class="seccion">
+<h2>El punto de cambio</h2>
+<button onclick="toggle(this)">Mostrar / Ocultar</button>
+<div class="contenido">
+<p>Un día entendí que si no hacía algo, todo iba a empeorar. No fue fácil, pero decidí empezar con pequeños cambios que después hicieron una gran diferencia.</p>
+<ul>
+<li>Organizar mi tiempo con un horario realista.</li>
+<li>Eliminar distracciones innecesarias.</li>
+<li>Hablar con alguien de confianza.</li>
+</ul>
+</div>
+</div>
+
+<div class="seccion">
+<h2>Estrategias que sí funcionan</h2>
+<button onclick="toggle(this)">Mostrar / Ocultar</button>
+<div class="contenido">
+<p>Estas estrategias fueron clave para mejorar mi situación:</p>
+<ul>
+<li>Dividir tareas grandes en partes pequeñas.</li>
+<li>Establecer metas diarias alcanzables.</li>
+<li>Descansar sin culpa para evitar el agotamiento.</li>
+<li>Recompensarme por cumplir objetivos.</li>
+</ul>
+</div>
+</div>
+
+<div class="seccion">
+<h2>Lo que aprendí</h2>
+<button onclick="toggle(this)">Mostrar / Ocultar</button>
+<div class="contenido">
+<p>Aprendí que no se trata de ser perfecto, sino constante. La disciplina, aunque a veces cuesta, es lo que realmente hace la diferencia.</p>
+<ul>
+<li>El progreso es más importante que la perfección.</li>
+<li>Equivocarse es parte del proceso.</li>
+<li>Siempre se puede volver a empezar.</li>
+</ul>
+</div>
+</div>
+
+<div class="seccion">
+<h2>Mensaje para otros estudiantes</h2>
+<button onclick="toggle(this)">Mostrar / Ocultar</button>
+<div class="contenido">
+<p>Si estás pasando por algo parecido, quiero que sepas que no estás solo. Todos en algún momento sentimos que no podemos, pero sí se puede salir adelante.</p>
+<ul>
+<li>No te rindas en un mal momento.</li>
+<li>Busca ayuda si la necesitas.</li>
+<li>Cree en ti incluso cuando cueste.</li>
+</ul>
+</div>
+</div>
+
+<p class="nota">
+No se trata de no caer, sino de levantarse cada vez con más fuerza. Tu historia aún no termina.
+</p>
+
+<script>
+function toggle(btn){
+    let contenido = btn.nextElementSibling;
+    contenido.classList.toggle("oculto");
+}
+
+function mostrarTodo(){
+    document.querySelectorAll(".contenido").forEach(el=>{
+        el.classList.remove("oculto");
+    });
+}
+
+function ocultarTodo(){
+    document.querySelectorAll(".contenido").forEach(el=>{
+        el.classList.add("oculto");
+    });
+}
+</script>
+
+</body>
+</html>
