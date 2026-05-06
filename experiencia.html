@@ -20,29 +20,6 @@ h1{
     text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
 }
 
-.botones{
-    text-align:center;
-    margin-bottom:20px;
-}
-
-button{
-    background: rgba(255,255,255,0.3);
-    backdrop-filter: blur(10px);
-    color:#333;
-    border:none;
-    padding:10px 18px;
-    margin:5px;
-    border-radius:20px;
-    cursor:pointer;
-    font-size:15px;
-    transition:0.3s;
-}
-
-button:hover{
-    background: rgba(255,255,255,0.6);
-    transform:scale(1.05);
-}
-
 .seccion{
     background: rgba(255,255,255,0.25);
     backdrop-filter: blur(12px);
@@ -80,8 +57,6 @@ p,li{
     border-radius: 15px;
 }
 
-.oculto{ display:none; }
-
 @media (max-width: 600px){
     body{ padding:10px; }
     .seccion{ padding:15px; }
@@ -95,15 +70,8 @@ p,li{
 
 <img src="4.jpeg" class="img-full">
 
-<div class="botones">
-    <button onclick="mostrarTodo()">Mostrar todo</button>
-    <button onclick="ocultarTodo()">Ocultar todo</button>
-</div>
-
 <div class="seccion">
 <h2>El momento difícil</h2>
-<button onclick="toggle(this)">Mostrar / Ocultar</button>
-<div class="contenido">
 <p>Hubo un momento en mi vida escolar donde todo empezó a salir mal. Me sentía cansado, sin ganas y con la sensación de que no importaba cuánto intentara, no iba a mejorar. Empecé a dejar tareas, a distraerme y poco a poco perdí el control.</p>
 <ul>
 <li>Falta de organización y acumulación de trabajos.</li>
@@ -111,12 +79,9 @@ p,li{
 <li>Pensamientos negativos como “no puedo” o “ya para qué”.</li>
 </ul>
 </div>
-</div>
 
 <div class="seccion">
 <h2>Consecuencias reales</h2>
-<button onclick="toggle(this)">Mostrar / Ocultar</button>
-<div class="contenido">
 <p>No cambiar a tiempo tuvo consecuencias. Mis calificaciones bajaron, mi confianza también y empecé a alejarme de mis metas. Me di cuenta de que el problema no era la escuela, sino cómo estaba enfrentando las cosas.</p>
 <ul>
 <li>Bajo rendimiento académico.</li>
@@ -124,12 +89,9 @@ p,li{
 <li>Pérdida de motivación.</li>
 </ul>
 </div>
-</div>
 
 <div class="seccion">
 <h2>El punto de cambio</h2>
-<button onclick="toggle(this)">Mostrar / Ocultar</button>
-<div class="contenido">
 <p>Un día entendí que si no hacía algo, todo iba a empeorar. No fue fácil, pero decidí empezar con pequeños cambios que después hicieron una gran diferencia.</p>
 <ul>
 <li>Organizar mi tiempo con un horario realista.</li>
@@ -137,12 +99,9 @@ p,li{
 <li>Hablar con alguien de confianza.</li>
 </ul>
 </div>
-</div>
 
 <div class="seccion">
 <h2>Estrategias que sí funcionan</h2>
-<button onclick="toggle(this)">Mostrar / Ocultar</button>
-<div class="contenido">
 <p>Estas estrategias fueron clave para mejorar mi situación:</p>
 <ul>
 <li>Dividir tareas grandes en partes pequeñas.</li>
@@ -151,12 +110,9 @@ p,li{
 <li>Recompensarme por cumplir objetivos.</li>
 </ul>
 </div>
-</div>
 
 <div class="seccion">
 <h2>Lo que aprendí</h2>
-<button onclick="toggle(this)">Mostrar / Ocultar</button>
-<div class="contenido">
 <p>Aprendí que no se trata de ser perfecto, sino constante. La disciplina, aunque a veces cuesta, es lo que realmente hace la diferencia.</p>
 <ul>
 <li>El progreso es más importante que la perfección.</li>
@@ -164,12 +120,9 @@ p,li{
 <li>Siempre se puede volver a empezar.</li>
 </ul>
 </div>
-</div>
 
 <div class="seccion">
 <h2>Mensaje para otros estudiantes</h2>
-<button onclick="toggle(this)">Mostrar / Ocultar</button>
-<div class="contenido">
 <p>Si estás pasando por algo parecido, quiero que sepas que no estás solo. Todos en algún momento sentimos que no podemos, pero sí se puede salir adelante.</p>
 <ul>
 <li>No te rindas en un mal momento.</li>
@@ -177,30 +130,10 @@ p,li{
 <li>Cree en ti incluso cuando cueste.</li>
 </ul>
 </div>
-</div>
 
 <p class="nota">
 No se trata de no caer, sino de levantarse cada vez con más fuerza. Tu historia aún no termina.
 </p>
-
-<script>
-function toggle(btn){
-    let contenido = btn.nextElementSibling;
-    contenido.classList.toggle("oculto");
-}
-
-function mostrarTodo(){
-    document.querySelectorAll(".contenido").forEach(el=>{
-        el.classList.remove("oculto");
-    });
-}
-
-function ocultarTodo(){
-    document.querySelectorAll(".contenido").forEach(el=>{
-        el.classList.add("oculto");
-    });
-}
-</script>
 
 </body>
 </html>
